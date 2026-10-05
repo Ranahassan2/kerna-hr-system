@@ -1,5 +1,6 @@
 # Kerna - Intelligent HR Management System
 
+**Live Demo:** [https://kernalsemon.vercel.app/](https://kernalsemon.vercel.app/)
 ![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-8.0.0-purple?style=for-the-badge&logo=vite)
 ![Supabase](https://img.shields.io/badge/Supabase-Backend_as_a_Service-green?style=for-the-badge&logo=supabase)
