@@ -1,16 +1,70 @@
-# React + Vite
+# 🏢 Kerna - Intelligent HR Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-8.0.0-purple?style=for-the-badge&logo=vite)
+![Supabase](https://img.shields.io/badge/Supabase-Backend_as_a_Service-green?style=for-the-badge&logo=supabase)
 
-Currently, two official plugins are available:
+## 🌟 Overview
+**Kerna HR System** is a next-generation Human Resources Management application tailored specifically for modern architectural and civil engineering enterprises. Built with cutting-edge web technologies, it streamlines employee management, unifies administrative workflows, and fosters seamless communication between HR departments and engineering staff.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Core Features
 
-## React Compiler
+### 👨‍💼 For HR Administrators
+- **Comprehensive Dashboard:** A bird's-eye view of all organizational metrics.
+- **Employee Lifecycle Management:** Effortlessly onboard new engineering talent with the `AddEmployeeModal`.
+- **Deduction & Payroll Tracking:** Manage financial adjustments and deductions transparently using the `DeductionModal`.
+- **Request Resolution:** Review, approve, or reject employee leave and administrative requests systematically.
+- **Performance Reviews:** Conduct and log periodic evaluations using the `ReviewModal`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👷 For Employees
+- **Personalized Portal:** Employees can securely log in to track their employment status, view deductions, and submit formal requests directly to the HR department.
+- **Real-time Feedback:** Integrated toast notifications ensure users are immediately informed about the status of their actions.
 
-## Expanding the Oxlint configuration
+## 🛠️ Technical Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+This project is built on a highly optimized, modern React stack designed for scalability and rapid iterations:
+
+- **Frontend Framework:** React 19 powered by Vite for lightning-fast Hot Module Replacement (HMR) and optimized production builds.
+- **State Management:** Context API (`AppProvider`) ensuring a predictable and centralized application state.
+- **Backend & Database:** Supabase, offering robust PostgreSQL database capabilities, real-time subscriptions, and secure authentication.
+- **Styling:** Vanilla CSS customized for a premium, responsive, and glassmorphism-inspired aesthetic.
+- **Linting:** Oxc (oxlint) for ultra-fast, Rust-based static code analysis.
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Ranahassan2/kerna-hr-system.git
+   cd kerna-hr-system
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Setup:**
+   Create a `.env` file in the root directory and configure your Supabase credentials:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_project_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+4. **Run the Development Server:**
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to `http://localhost:5173`.
+
+## 🔒 Security
+- **Environment Variables:** All sensitive backend credentials (Supabase keys) are securely managed via environment variables and excluded from version control.
+- **Authentication:** Secure user login flows managed directly through Supabase Auth.
+
+---
+*Designed & Developed with precision for Kerna Engineering.*
